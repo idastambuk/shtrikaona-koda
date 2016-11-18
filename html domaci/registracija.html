@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hello!</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="registracija.html">Registracija</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+    </div>
+
+    
+    <div class="form">
+        <form>
+            <h1>Obrazac za registraciju</h1>
+            
+                <h5>Ime i prezime:</h5>
+                <input type="text" name="name" placeholder="Ime">
+                <input type="text" name="surname" placeholder="Prezime">
+                <div>
+                    <h5>Spol:</h5>
+                    
+                    <input type="radio" name="gender" value="female" checked="checked" id="female"> 
+                    <label for="female">Žensko</label>
+                    <input type="radio" name="gender" value="male" id="male"> 
+                    <label for="male">Muško</label>
+                    <input type="radio" name="gender" value="nonDisclosed" id="nonDisclosed"> 
+                    <label for="nonDisclosed">Ne izjašnjavam se</label>
+                </div>
+                <div>
+                    <h5>E-mail</h5>
+                    <input type="email" name="email" placeholder="E-mail adresa">
+                </div>
+
+                <div>
+                    <h5>Grad:</h5>
+                    <select name="city" >
+                        <option value="Zagreb" selected>Zagreb</option>
+                        <option value="Rijeka">Rijeka</option>
+                        <option value="Split">Split</option>
+                    </select>
+                </div>
+                <div>
+                    <h5>Lozinka:</h5>
+                    <input type="password" name="password" placeholder="Lozinka">
+                </div>
+            
+
+            <div>
+                <h5>Odaberi profilnu sliku</h5>
+                <input type="file" name="uploadedImage">
+                
+            </div>
+
+            <div>
+                <br>
+                <input type="submit" value="Registriraj se">
+                <button type="cancel">Odustani</button>
+            </div>
+        </form>
+
+     
+    </div>
+    
+</body>
